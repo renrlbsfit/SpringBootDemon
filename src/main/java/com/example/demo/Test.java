@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.sun.deploy.Environment;
+import org.springframework.core.env.Environment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -89,6 +89,7 @@ public class Test {
     @RequestMapping("test3")
     @ResponseBody
     public String index3(){
+        System.out.println(env);
         return "klafaskfakfkasjfasjkfalksflkjewlrkjfjsoidjfisajfkasjlfjasidf" ;
     }
 
